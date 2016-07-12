@@ -1,0 +1,20 @@
+<div class="content-section-a">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-sm-6" [class.col-lg-offset-1]="pullLeft" [class.col-sm-push-6]="pullLeft">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+        <h2 class="section-heading">{{headingText1}}<br>{{headingText2}}</h2>
+        <p class="lead" [innerHtml]="leadHtml"></p>
+      </div>
+      <div class="col-lg-5 col-sm-6" [class.col-lg-offset-2]="!pullLeft" [class.col-sm-pull-6]="pullLeft">
+        <img class="img-responsive" [src]="imageUrl" alt="">
+      </div>
+    </div>
+
+  </div>
+  <!-- /.container -->
+
+</div>
+<!-- /.content-section-a -->
